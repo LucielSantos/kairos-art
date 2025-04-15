@@ -2,6 +2,7 @@ import type React from "react";
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import { ClientThemeProvider } from "@/components/ClientThemeProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ClientThemeProvider>{children}</ClientThemeProvider>
+
+        <Analytics />
       </body>
     </html>
   );

@@ -1,9 +1,18 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ChevronRight, Gift, Home, Mail, MapPin, Package, Phone, ShoppingBag } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  ChevronRight,
+  Gift,
+  Home,
+  Mail,
+  MapPin,
+  Package,
+  Phone,
+  ShoppingBag,
+} from "lucide-react";
 
 export default function Dashboard() {
   return (
@@ -24,13 +33,19 @@ export default function Dashboard() {
             <Link href="#" className="text-sm font-medium hover:underline">
               Início
             </Link>
-            <Link href="#produtos" className="text-sm font-medium hover:underline">
+            <Link
+              href="#produtos"
+              className="text-sm font-medium hover:underline"
+            >
               Produtos
             </Link>
             <Link href="#sobre" className="text-sm font-medium hover:underline">
               Sobre Nós
             </Link>
-            <Link href="#contato" className="text-sm font-medium hover:underline">
+            <Link
+              href="#contato"
+              className="text-sm font-medium hover:underline"
+            >
               Contato
             </Link>
           </nav>
@@ -67,8 +82,8 @@ export default function Dashboard() {
                     Artesanato em MDF com Qualidade e Carinho
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Caixas, brindes, brinquedos e muito mais. Peças únicas feitas com dedicação para tornar seus
-                    momentos especiais.
+                    Caixas, brindes, brinquedos e muito mais. Peças únicas
+                    feitas com dedicação para tornar seus momentos especiais.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -78,7 +93,7 @@ export default function Dashboard() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=550&width=450"
+                  src="/logo2.svg?height=550&width=450"
                   alt="Produtos em MDF Kairos Art"
                   width={550}
                   height={450}
@@ -93,9 +108,12 @@ export default function Dashboard() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nossos Produtos</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Nossos Produtos
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Descubra nossa variedade de produtos artesanais em MDF, feitos com dedicação e atenção aos detalhes.
+                  Descubra nossa variedade de produtos artesanais em MDF, feitos
+                  com dedicação e atenção aos detalhes.
                 </p>
               </div>
             </div>
@@ -123,11 +141,19 @@ export default function Dashboard() {
                         />
                       </div>
                       <CardContent className="p-4">
-                        <h3 className="font-semibold">Produto em MDF #{item}</h3>
-                        <p className="text-sm text-muted-foreground">Artesanato de qualidade</p>
+                        <h3 className="font-semibold">
+                          Produto em MDF #{item}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          Artesanato de qualidade
+                        </p>
                         <div className="mt-2 flex items-center justify-between">
-                          <Link href="#" className="text-sm font-medium text-primary flex items-center">
-                            Ver detalhes <ChevronRight className="h-4 w-4 ml-1" />
+                          <Link
+                            href="#"
+                            className="text-sm font-medium text-primary flex items-center"
+                          >
+                            Ver detalhes{" "}
+                            <ChevronRight className="h-4 w-4 ml-1" />
                           </Link>
                         </div>
                       </CardContent>
@@ -149,11 +175,19 @@ export default function Dashboard() {
                         />
                       </div>
                       <CardContent className="p-4">
-                        <h3 className="font-semibold">Caixa Decorativa #{item}</h3>
-                        <p className="text-sm text-muted-foreground">Perfeita para presentes</p>
+                        <h3 className="font-semibold">
+                          Caixa Decorativa #{item}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          Perfeita para presentes
+                        </p>
                         <div className="mt-2 flex items-center justify-between">
-                          <Link href="#" className="text-sm font-medium text-primary flex items-center">
-                            Ver detalhes <ChevronRight className="h-4 w-4 ml-1" />
+                          <Link
+                            href="#"
+                            className="text-sm font-medium text-primary flex items-center"
+                          >
+                            Ver detalhes{" "}
+                            <ChevronRight className="h-4 w-4 ml-1" />
                           </Link>
                         </div>
                       </CardContent>
@@ -175,11 +209,19 @@ export default function Dashboard() {
                         />
                       </div>
                       <CardContent className="p-4">
-                        <h3 className="font-semibold">Brinde Corporativo #{item}</h3>
-                        <p className="text-sm text-muted-foreground">Personalizado para sua empresa</p>
+                        <h3 className="font-semibold">
+                          Brinde Corporativo #{item}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          Personalizado para sua empresa
+                        </p>
                         <div className="mt-2 flex items-center justify-between">
-                          <Link href="#" className="text-sm font-medium text-primary flex items-center">
-                            Ver detalhes <ChevronRight className="h-4 w-4 ml-1" />
+                          <Link
+                            href="#"
+                            className="text-sm font-medium text-primary flex items-center"
+                          >
+                            Ver detalhes{" "}
+                            <ChevronRight className="h-4 w-4 ml-1" />
                           </Link>
                         </div>
                       </CardContent>
@@ -201,11 +243,19 @@ export default function Dashboard() {
                         />
                       </div>
                       <CardContent className="p-4">
-                        <h3 className="font-semibold">Brinquedo Educativo #{item}</h3>
-                        <p className="text-sm text-muted-foreground">Diversão e aprendizado</p>
+                        <h3 className="font-semibold">
+                          Brinquedo Educativo #{item}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          Diversão e aprendizado
+                        </p>
                         <div className="mt-2 flex items-center justify-between">
-                          <Link href="#" className="text-sm font-medium text-primary flex items-center">
-                            Ver detalhes <ChevronRight className="h-4 w-4 ml-1" />
+                          <Link
+                            href="#"
+                            className="text-sm font-medium text-primary flex items-center"
+                          >
+                            Ver detalhes{" "}
+                            <ChevronRight className="h-4 w-4 ml-1" />
                           </Link>
                         </div>
                       </CardContent>
@@ -225,13 +275,15 @@ export default function Dashboard() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="space-y-4">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Por que escolher a Kairos Art?</div>
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                  Por que escolher a Kairos Art?
+                </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
                   Artesanato em MDF com Qualidade e Personalização
                 </h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Cada peça é criada com atenção aos detalhes, garantindo produtos únicos e de alta qualidade para
-                  nossos clientes.
+                  Cada peça é criada com atenção aos detalhes, garantindo
+                  produtos únicos e de alta qualidade para nossos clientes.
                 </p>
               </div>
               <div className="grid gap-6 sm:grid-cols-2">
@@ -242,7 +294,9 @@ export default function Dashboard() {
                         <Package className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold">Produtos Personalizados</h3>
+                        <h3 className="font-semibold">
+                          Produtos Personalizados
+                        </h3>
                         <p className="text-sm text-muted-foreground">
                           Criamos produtos sob medida para suas necessidades.
                         </p>
@@ -259,7 +313,8 @@ export default function Dashboard() {
                       <div>
                         <h3 className="font-semibold">Presentes Especiais</h3>
                         <p className="text-sm text-muted-foreground">
-                          Opções perfeitas para presentear em ocasiões especiais.
+                          Opções perfeitas para presentear em ocasiões
+                          especiais.
                         </p>
                       </div>
                     </div>
@@ -274,7 +329,8 @@ export default function Dashboard() {
                       <div>
                         <h3 className="font-semibold">Brindes Corporativos</h3>
                         <p className="text-sm text-muted-foreground">
-                          Soluções para empresas que buscam brindes diferenciados.
+                          Soluções para empresas que buscam brindes
+                          diferenciados.
                         </p>
                       </div>
                     </div>
@@ -289,7 +345,8 @@ export default function Dashboard() {
                       <div>
                         <h3 className="font-semibold">Decoração para Casa</h3>
                         <p className="text-sm text-muted-foreground">
-                          Peças decorativas que dão um toque especial ao seu lar.
+                          Peças decorativas que dão um toque especial ao seu
+                          lar.
                         </p>
                       </div>
                     </div>
@@ -314,24 +371,31 @@ export default function Dashboard() {
               </div>
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sobre a Kairos Art</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                    Sobre a Kairos Art
+                  </h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    A Kairos Art nasceu da paixão pelo artesanato e pela criação de peças únicas em MDF. Nossa missão é
-                    transformar momentos especiais através de produtos artesanais de qualidade.
+                    A Kairos Art nasceu da paixão pelo artesanato e pela criação
+                    de peças únicas em MDF. Nossa missão é transformar momentos
+                    especiais através de produtos artesanais de qualidade.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Fundada em 2018, nossa empresa tem se dedicado a criar produtos que unem funcionalidade, beleza e
-                    emoção. Cada peça é pensada para trazer alegria e praticidade para o dia a dia de nossos clientes.
+                    Fundada em 2018, nossa empresa tem se dedicado a criar
+                    produtos que unem funcionalidade, beleza e emoção. Cada peça
+                    é pensada para trazer alegria e praticidade para o dia a dia
+                    de nossos clientes.
                   </p>
                   <p className="text-muted-foreground">
-                    Trabalhamos com matéria-prima de qualidade e processos que respeitam o meio ambiente, garantindo
-                    produtos duráveis e sustentáveis.
+                    Trabalhamos com matéria-prima de qualidade e processos que
+                    respeitam o meio ambiente, garantindo produtos duráveis e
+                    sustentáveis.
                   </p>
                   <p className="text-muted-foreground">
-                    Nossa equipe é formada por artesãos apaixonados pelo que fazem, sempre em busca de inovação e
-                    excelência em cada detalhe.
+                    Nossa equipe é formada por artesãos apaixonados pelo que
+                    fazem, sempre em busca de inovação e excelência em cada
+                    detalhe.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -342,13 +406,19 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section id="contato" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section
+          id="contato"
+          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Entre em Contato</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Entre em Contato
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Estamos prontos para atender suas necessidades e criar produtos personalizados para você.
+                  Estamos prontos para atender suas necessidades e criar
+                  produtos personalizados para você.
                 </p>
               </div>
             </div>
@@ -359,27 +429,37 @@ export default function Dashboard() {
                   <Phone className="h-5 w-5 text-primary" />
                   <div>
                     <h3 className="font-semibold">Telefone</h3>
-                    <p className="text-sm text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-sm text-muted-foreground">
+                      (11) 99999-9999
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-sm text-muted-foreground">contato@kairosart.com.br</p>
+                    <p className="text-sm text-muted-foreground">
+                      contato@kairosart.com.br
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />
                   <div>
                     <h3 className="font-semibold">Endereço</h3>
-                    <p className="text-sm text-muted-foreground">Rua das Artes, 123 - São Paulo, SP</p>
+                    <p className="text-sm text-muted-foreground">
+                      Rua das Artes, 123 - São Paulo, SP
+                    </p>
                   </div>
                 </div>
                 <div className="mt-6">
                   <h3 className="font-semibold mb-2">Horário de Atendimento</h3>
-                  <p className="text-sm text-muted-foreground">Segunda a Sexta: 9h às 18h</p>
-                  <p className="text-sm text-muted-foreground">Sábado: 9h às 13h</p>
+                  <p className="text-sm text-muted-foreground">
+                    Segunda a Sexta: 9h às 18h
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Sábado: 9h às 13h
+                  </p>
                 </div>
               </div>
 
@@ -468,6 +548,5 @@ export default function Dashboard() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-

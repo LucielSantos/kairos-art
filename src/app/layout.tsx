@@ -1,10 +1,10 @@
 import type React from "react";
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import { ClientThemeProvider } from "@/components/ClientThemeProvider";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Kairos Art - Artesanato em MDF com Qualidade e Carinho",
@@ -25,11 +25,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Kairos Art - Artesanato em MDF" />
-        <meta
-          property="og:description"
-          content="Loja especializada em produtos artesanais em MDF como caixas, brindes, brinquedos e muito mais."
-        />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kairosart.com.br" />
         <meta
@@ -38,7 +35,7 @@ export default function RootLayout({
         />
         <link rel="canonical" href="https://www.kairosart.com.br" />
       </head>
-      <body className={inter.className}>
+      <body className={openSans.className}>
         <ClientThemeProvider>{children}</ClientThemeProvider>
 
         <Analytics />
